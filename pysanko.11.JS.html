@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.11.css">
+
+</head>
+
+<body>
+
+    <div id="backgraund">
+        <div id="backgroundFooter"></div>
+    </div>
+    <div id="bookTask">
+
+        <div id="leftPage">
+            <p>Список завдань</p>
+            <form action="" name='taskList' id='taskList'>
+                <div class="checkbox">
+                    <input type="checkbox"  onclick = "hide()" name="HTML" id="HTML">
+                    <label for="HTML">HTML5</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" onclick = "hide()" name="CSS3" id="CSS3">
+                    <label for="CSS3">CSS3</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox"  onclick = "hide()" name="SASS/SCSS" id="SASS/SCSS">
+                    <label for="SASS/SCSS">SASS/SCSS</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox"  onclick = "hide()" name="Bootstrap" id="Bootstrap">
+                    <label for="Bootstrap">Bootstrap</label>
+                </div>
+            </form>
+        </div>
+        <div id="rightPage">
+            <form action="" name='addNewTask' id='addNewTask'>
+                <p>Додати нове завдання</p>
+                <input type="text" name="writeNewTask" id="writeNewTask">
+                <input type="button" id='add' name='add' value="додати">
+            </form>
+        </div>
+        <div id="warning">
+            <header>
+                <p id="titleWarning">Попередження</p>
+                <input type="button" id="closeWarning" value="X">
+            </header>
+
+
+            <p id="textWarning"></p>
+        </div>
+    </div>
+
+
+    <script src="script.11.js"></script>
+</body>
+
+</html>
